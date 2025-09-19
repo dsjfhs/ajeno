@@ -1,0 +1,124 @@
+	<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Contacto - HealthyFit</title>
+<style type="text/css">
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8fdfb;
+    color: #222;
+    line-height: 1.6;
+}
+
+#cabecera {
+    width: 100%;
+    background: linear-gradient(90deg, #0DAA5D, #1ece85);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: relative;
+}
+
+#cabecera img {
+    max-width: 180px;
+}
+
+#cierre {
+    background-color: #D5EBDF;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+}
+
+#cierre input,
+#cierre textarea,
+#cierre select {
+    width: 95%;
+    max-width: 500px;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#cierre input:focus,
+#cierre textarea:focus {
+    border-color: #0DAA5D;
+    box-shadow: 0 0 8px rgba(13,170,93,0.4);
+}
+
+#cierre label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#cierre input[type="submit"],
+#cierre input[type="reset"] {
+    width: auto;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #0DAA5D;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#cierre input[type="submit"]:hover,
+#cierre input[type="reset"]:hover {
+    background-color: #1ece85;
+}
+
+#final {
+    background-color: #161112;
+    color: #fff;
+    text-align: center;
+    line-height: 120px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+</style>
+</head>
+
+<body>
+<div id="cabecera">
+  <img src="Captura de pantalla 2025-09-18 082505.png" width="204" height="84" alt=""/>
+</div>
+
+<div id="cierre">
+  <label>Nombre:</label>
+  <input type="text" name="nombre">
+
+  <label>Apellido:</label>
+  <input type="text" name="apellido">
+
+  <label>Correo electrónico:</label>
+  <input type="email" name="email">
+
+  <label>Teléfono:</label>
+  <input type="tel" name="telefono">
+
+  <label>Asunto:</label>
+  <input type="text" name="asunto">
+
+  <label>Mensaje:</label>
+  <textarea name="mensaje" rows="5"></textarea>
+
+  <input type="submit" value="Enviar">
+  <input type="reset" value="Limpiar">
+</div>
+
+<footer id="final">"HealthyFit"</footer>
+</body>
+</html>
+
